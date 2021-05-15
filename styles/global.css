@@ -1,0 +1,86 @@
+root {
+  --primary-color: #E50914;
+  --bg-color: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #141414;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  padding: 16px 42px;
+}
+
+.container a,
+.nav-settings a:nth-child(2) {
+  text-decoration: none;
+  color: #f7f7f7;
+  margin-right: 16px;
+  font-weight: normal;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.nav-settings a:nth-child(2) {
+  margin-right: 0;
+}
+
+.container a:hover,
+.nav-settings a:nth-child(2):hover {
+  opacity: .9;
+}
+
+.container a.active {
+  font-weight: bold;
+}
+
+.container .logo {
+  margin-right: 16px;
+}
+
+.nav-settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-settings a {
+  margin-left: 32px;
+}
+
+.nav-settings a:last-child {
+  padding: 0 64px 0 0;
+}
+
+.dropdown img:first-child {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown img:last-child {
+  margin-left: 8px;
+}
