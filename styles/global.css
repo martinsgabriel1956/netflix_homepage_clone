@@ -9,7 +9,9 @@ root {
   box-sizing: border-box;
 }
 body {
-  background: #141414;
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../assets/capa.jpg') no-repeat;
+  background-size: cover;
+ 
   font-family: sans-serif;
 }
 
@@ -17,18 +19,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: hidden;
 }
 
 
-header .container {
+header .content {
   display: flex;
   align-items: center;
   justify-content: start;
 
-  padding: 16px 42px;
+  padding: 12px 42px;
 }
 
-.container a,
+.content a,
 .nav-settings a:nth-child(2) {
   text-decoration: none;
   color: #f7f7f7;
@@ -42,16 +45,16 @@ header .container {
   margin-right: 0;
 }
 
-.container a:hover,
+.content a:hover,
 .nav-settings a:nth-child(2):hover {
   opacity: .9;
 }
 
-.container a.active {
+.content a.active {
   font-weight: bold;
 }
 
-.container .logo {
+.content .logo {
   margin-right: 16px;
 }
 
@@ -83,4 +86,22 @@ header .container {
 
 .dropdown img:last-child {
   margin-left: 8px;
+}
+
+main {
+  background: var(--bg-color);
+}
+
+.container {
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 48px;
+}
+
+.description {
+  color: #FFF;
+  text-align: start;
 }
