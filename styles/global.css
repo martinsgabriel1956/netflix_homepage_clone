@@ -9,17 +9,22 @@ root {
   box-sizing: border-box;
 }
 body {
-  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../assets/capa.jpg') no-repeat;
-  background-size: cover;
+  background: #141414;
  
   font-family: sans-serif;
+}
+
+#container {
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../assets/capa.jpg') no-repeat;
+  background-size: cover;
+  height: 800px;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: hidden;
+  background: none;
 }
 
 
@@ -30,6 +35,7 @@ header .content {
 
   padding: 12px 42px;
 }
+
 
 .content a,
 .nav-settings a:nth-child(2) {
@@ -94,12 +100,9 @@ header .content {
   margin-left: 16px;
 }
 
-main {
-  background: var(--bg-color);
-}
-
 .container {
-  height: 480px;
+  height: 560px;
+
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -110,7 +113,6 @@ main {
 .description {
   color: #FFF;
   text-align: start;
-  width: 32%;
   margin-bottom: 1rem;
   line-height: 1.45rem;
   font-size: 1.15rem;
@@ -138,7 +140,7 @@ main {
 
 .watch-btn {
   border: 1px solid #EFEFEF;
-  margin-right: 4px;
+  margin-right: 12px;
   opacity: 1;
 }
 
@@ -160,3 +162,24 @@ main {
 .info-btn > img {
   margin-right: 12px;
 }
+
+.carousel > h3{
+  color: #e5e5e5;
+  margin-bottom: 8px;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.keen-slider,
+h3 {
+  padding-left: 64px;
+}
+
+
+

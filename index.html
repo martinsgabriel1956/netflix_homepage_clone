@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css" />
     <title>Netflix</title>
   </head>
   <body>
-    <header>
-      <nav class="content">
-        <a href="./index.html
-        ">
+    <div id="container">
+      <header>
+        <nav class="content">
+          <a href="./index.html
+          ">
           <img
-            src="https://fontmeme.com/permalink/210519/05090dee1cbc138d60706e3826668536.png"
-            alt="Logo"
-            class="logo"
+          src="https://fontmeme.com/permalink/210519/05090dee1cbc138d60706e3826668536.png"
+          alt="Logo"
+          class="logo"
           />
         </a>
         <a href="#" class="active">Inicio</a>
@@ -39,27 +41,76 @@
     <main>
       <div class="container">
         <img
-          src="https://logosmarcas.net/wp-content/uploads/2020/05/Stranger-Things-Logo.png"
-          width="320px"
-          alt="Nome do filme"
+        src="https://logosmarcas.net/wp-content/uploads/2020/05/Stranger-Things-Logo.png"
+        width="320px"
+        alt="Nome do filme"
         />
-
+        
         <p class="description">
           Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o
           que encontram são segredos, forças sobrenaturais e uma menina.
         </p>
-
+        
         <div class="buttons">
           <button class="watch-btn">
-           <img src="/assets/play-button-arrowhead.svg" alt="play">
+            <img src="/assets/play-button-arrowhead.svg" alt="play">
             <span>Assistir</span>
           </button>
           <button class="info-btn">
-           <img src="/assets/info.svg" alt="">
+            <img src="/assets/info.svg" alt="">
             <span>Mais informações</spa>
-          </button>
+            </button>
+          </div>
+        </div>
+      </main>
+      <div class="carousel">
+        <h3>Filmes</h3>
+
+        <div id="my-keen-slider" class="keen-slider">
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini1.jpg" alt="">
+          </div>
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini2.jpg" alt="">
+          </div>
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini3.jpg" alt="">
+          </div>
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini4.jpg" alt="">
+          </div>
+          
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini5.jpg" alt="">
+          </div>
+          
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini6.jpg" alt="">
+          </div>
+          
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini7.jpg" alt="">
+          </div>
+          
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini8.jpg" alt="">
+          </div>
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini9.jpg" alt="">
+          </div>
+          <div class="keen-slider__slide">
+            <img class="box-filme" src="./assets/mini10.jpg" alt="">
+          </div>
         </div>
       </div>
-    </main>
+    </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
+      <script>
+        let slider = new KeenSlider('#my-keen-slider', {
+          slidesPerView: 5,
+          spacing: 6,
+      })
+    </script>
   </body>
 </html>
